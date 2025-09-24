@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Shee Marya Collections</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+  <header>
+    <img src="https://scontent-mba2-1.xx.fbcdn.net/v/t39.30808-1/291854565_456883809774795_4795529824812581324_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=103&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=vuFx0X3mK6EQ7kNvwFVPgzE&_nc_oc=AdnX6mKogBQyhkT0lS8UDgC6VE88pQdhn25qiXJViUVosKB20U5bICnvCvd6SyVXrgI&_nc_zt=24&_nc_ht=scontent-mba2-1.xx&_nc_gid=37zMFLVAC5aA5NKcnDsaBw&oh=00_AfY-RX9LKYMj5qYO1-4RZRdIH6pK8DZ3Ztny1qwO4vSMbw&oe=68D23A5F" 
+          alt="logo" width="200" height="200">
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="products.html">PRODUCTS</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="cart.html" class="active">CART</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cart">
+      <h2>Your Shopping Cart</h2>
+      <p>Review the items below before checkout.</p>
+
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Single Woolen Duvet</td>
+            <td>Ksh 2000</td>
+            <td><input type="number" value="1" min="1"></td>
+            <td>Ksh 2000</td>
+            <td><button>Remove</button></td>
+          </tr>
+          <tr>
+            <td>Fluffy Carpet</td>
+            <td>Ksh 2800</td>
+            <td><input type="number" value="2" min="1"></td>
+            <td>Ksh 5600</td>
+            <td><button>Remove</button></td> 
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="cart-summary">
+        <h3>Cart Summary</h3>
+        <p>Subtotal: <strong>Ksh 7600</strong></p>
+        <p>Tax (5%): <strong>Ksh 380</strong></p>
+        <p>Grand Total: <strong>Ksh 7980</strong></p>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-bottom">&copy; 2025 Shee Marya Collections. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
