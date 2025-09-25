@@ -39,7 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", () => {
       let card = button.parentElement;
       let name = card.querySelector("h3").innerText;
-      let price = parseInt(card.querySelector(".price").innerText);
+      let price = parseInt(card.querySelector(".price").innerText.trim());
+
       addToCart(name, price);
     });
   });
@@ -87,3 +88,4 @@ document.addEventListener("DOMContentLoaded", () => {
   renderCart();
 
 });
+
